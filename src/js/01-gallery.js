@@ -20,7 +20,7 @@ const images = galleryItems.map(item => {
 
 galleryContainer.insertAdjacentHTML('beforeend', images.join(''));
 
-lightbox = new SimpleLightbox('.gallery__item-link', {
+lightboxInstance = new SimpleLightbox('.gallery__item-link', {
   captionsData: 'alt',
   captionDelay: 250,
 });
